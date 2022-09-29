@@ -2,37 +2,98 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background-home {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./assets/img/jpg/welcome.jpg');
+  background-size: cover;
+  z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-home {
+  position: absolute;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 220px;
+}
+
+.header-home__logo {
+  /* background: rgba(255, 255, 255, .5); */
+  padding: 4px;
+  border-radius: 50%;
+
+}
+
+.header-home__title {
+  color: #373737;
+  font-family: Ruqaa;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.slogan {
+  position: absolute;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100vw;
+  bottom: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  /* color: rgb(229, 229, 229); */
+  color: #373737;
 }
 
-.App-link {
-  color: #61dafb;
+.slogan div {
+  padding: 10px;
+  /* background-color: rgba(255, 255, 255, .3); */
+  background-color: rgba(255, 255, 255, .3);
+  border-radius: 6px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, .4);
+  font-family: Quicksand;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slogan div span {
+  font-family: QuicksandBold;
+  text-transform: uppercase;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  /* background: red; */
+  top: 240px;
+  /*top min 220*/
+}
+
+.menu div {
+  width: 20%;
+  margin-left: 14px;
+  padding: 4.8px 14px;
+  background: #373737;
+  color: #fff;
+  cursor: pointer;
+  font-family: Quicksand;
+  font-size: 21.5px;
+  border: 1px solid #ffffff88;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, .4);
+  opacity: .8;
+  transition: all ease .4s;
+}
+
+.menu div:hover {
+  opacity: 1;
+  transition: all ease .4s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, .6),
+    0px 4px 8px rgba(0, 0, 0, .3);
+}
+
+.menu div:active {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, .4);
 }
