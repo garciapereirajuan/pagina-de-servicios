@@ -1,0 +1,46 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: #373737;
+    width: max-content;
+    color: #ffffff99;
+    border-radius: 4px;
+    box-shadow: 0 5.5px 8px rgba(0, 0, 0, .8);
+    opacity: .85;
+    height: 370px;
+}
+
+@keyframes rotate-img {
+    0% {
+        rotate: 0;
+        width: 100px;
+    }
+
+    90% {
+        width: 400px;
+        rotate: 360deg;
+    }
+
+    100% {
+        rotate: 360deg;
+        width: 500px;
+    }
+}
+
+.home img {
+    border-radius: 4px;
+    box-shadow: 0 5.5px 8px rgba(0, 0, 0, .8);
+    animation-name: rotate-img;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+}

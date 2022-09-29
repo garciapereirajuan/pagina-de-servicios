@@ -12,6 +12,23 @@
   z-index: -1;
 }
 
+.animation {
+  animation-name: opacity-background;
+  animation-duration: .8s;
+  animation-iteration-count: 1;
+
+}
+
+@keyframes opacity-background {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .opacity {
   position: fixed;
   width: 100%;
@@ -25,7 +42,7 @@
 }
 
 .background-services {
-  background-image: url('./assets/img/jpg/helicopter.jpg')
+  background-image: url('./assets/img/jpg/helicopter.jpg');
 }
 
 .header-home {
@@ -42,8 +59,9 @@
   /* background: rgba(255, 255, 255, .5); */
   padding: 4px;
   border-radius: 50%;
-
 }
+
+.header-home__logo img {}
 
 .header-home__title {
   color: #373737;

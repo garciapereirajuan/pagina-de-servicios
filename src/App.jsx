@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom'
 import infinityLogo from './assets/img/jpg/infinity-logo.png';
 import OurServices from './components/Services'
 import Home from './components/Home'
@@ -7,6 +7,7 @@ import Home from './components/Home'
 import './App.css';
 
 const classes = {
+  '/': 'background-home',
   '/home': 'background-home',
   '/our-services': 'background-services'
 }
@@ -14,30 +15,35 @@ const classes = {
 function App() {
   const [background, setBackground] = useState()
   const location = useLocation()
+  const navigate = useNavigate()
 
   useEffect(() => {
-    setBackground(classes[location.pathname])
+    setBackground(`${classes[location.pathname]} animation`)
+    setTimeout(() => setBackground(classes[location.pathname]), 1000)
   }, [location])
 
-  console.log(location)
 
   return (
     <div className="App">
       <div className={`background ${background}`} />
       {/* <div className='opacity' /> */}
       <header className='header-home'>
-        <div className='header-home__logo'>
-          <img src={infinityLogo} width='350px' style={{ color: 'white' }} />
+        <div
+          className='header-home__logo'
+        >
+          <Link to='/home'>
+            <img src={infinityLogo} alt='Infinite-Language-Studio-Logo' width='350px' style={{ color: 'white' }} />
+          </Link>
         </div>
         <div className='header-home__title'>
           Infinite Language Studio
         </div>
       </header>
       <div className='menu'>
-        <div>Nuestro Servicios</div>
-        <div>Quiénes Somos</div>
-        <div>Contacto</div>
-        <div>Idioma</div>
+        <div onClick={() => navigate('/our-services')}>Nuestro Servicios</div>
+        <div onClick={() => navigate('/')}>Quiénes Somos</div>
+        <div onClick={() => navigate('/')}>Contacto</div>
+        <div onClick={() => navigate('/')}>Idioma</div>
       </div>
       <div className='content'>
         <Routes>
