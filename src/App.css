@@ -1,14 +1,31 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  z-index: -1;
+}
+
+.opacity {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  opacity: .4;
 }
 
 .background-home {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
   background-image: url('./assets/img/jpg/welcome.jpg');
-  background-size: cover;
-  z-index: -1;
+}
+
+.background-services {
+  background-image: url('./assets/img/jpg/helicopter.jpg')
 }
 
 .header-home {
@@ -17,7 +34,7 @@
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: 220px;
 }
 
@@ -35,22 +52,32 @@
   font-weight: bold;
 }
 
+.background-title-logo {
+  background: rgba(255, 255, 255, .5);
+  padding: 4px;
+  border-radius: 4px;
+}
+
 .slogan {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
-  width: 100vw;
-  bottom: 40px;
+  width: 100%;
+  margin-top: 20px;
   font-size: 24px;
-  font-weight: bold;
+  /* font-weight: bold; */
   /* color: rgb(229, 229, 229); */
-  color: #373737;
+  /* color: #373737; */
 }
 
 .slogan div {
   padding: 10px;
   /* background-color: rgba(255, 255, 255, .3); */
-  background-color: rgba(255, 255, 255, .3);
+  /* background-color: rgba(255, 255, 255, .3); */
+  background: #373737;
+  opacity: .8;
+  color: #fff;
+  border: 1px solid #ffffff88;
   border-radius: 6px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, .4);
   font-family: Quicksand;
@@ -58,14 +85,14 @@
 
 .slogan div span {
   font-family: QuicksandBold;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .menu {
   position: absolute;
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   /* background: red; */
   top: 240px;
   /*top min 220*/
@@ -96,4 +123,32 @@
 
 .menu div:active {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, .4);
+}
+
+.content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+  width: 80%;
+  height: max-content;
+  top: 320px;
+  font-family: Quicksand;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #373737;
+  /* background: blue; */
+}
+
+.content .section-content {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 20px 40px 40px 40px;
+  background: rgba(243, 243, 243, 0.501);
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  text-align: justify;
 }
