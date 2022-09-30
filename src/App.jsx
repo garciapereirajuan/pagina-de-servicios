@@ -48,10 +48,23 @@ function App() {
       navigate('/home')
     }
 
-    setBackground(`${bgClass[location.pathname]} animation`)
+    window.scrollTo(0, 0)
+
+    const element = document.querySelectorAll('.animation')[0]
+    if (element) {
+      element.classList.remove('.animation')
+    }
+
+    const bg = bgClass[location.pathname]
+
+    setBackground(`${bg} animation`)
+    document.querySelectorAll('.content')[0].classList.add('animation-content')
+
     setTimeout(() => {
-      setBackground(bgClass[location.pathname])
-    }, 1000)
+      // setBackground(bg)
+      document.querySelectorAll('.animation')[0].classList.remove('animation')
+      document.querySelectorAll('.content')[0].classList.remove('animation-content')
+    }, 355)
 
     setTitle(titles[location.pathname])
     setSelect(btnClass[location.pathname])
@@ -74,18 +87,17 @@ function App() {
       <div className={`background ${background}`} />
       {/* <div className='opacity' /> */}
       <header className='header-home'>
-        <div className={`social ${socialBar}`}>
-          <Link to='/contact'>
+        {/* <div className={`social ${socialBar}`}>
+          <a href='mailto:no-reply@example.com'>
             <AiFillInstagram size={37} />
-          </Link>
+          </a>
           <Link to='/contact'>
             <FaFacebook size={32} />
-            {/* <div style={{ marginTop: '2px' }} /> */}
           </Link>
           <Link to='/contact'>
             <IoLogoWhatsapp size={35} />
           </Link>
-        </div>
+        </div> */}
         <div
           className='header-home__logo'
         >
