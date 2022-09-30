@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import './OurServices.scss'
 
 const OurServices = () => {
     return (
         <div className='section-content services'>
-            <div className='border' />
+            {/* <div className='border' /> */}
             <p className='subtitle'>Clases de idioma online</p>
 
             <p>La modalidad online resulta ser cada vez más viable para más estudiantes en todo el mundo. Con años de experiencia en ella, ofrecemos cursos ESL en todos los niveles, clases individuales y grupales y capacitaciones para empresas. Contamos con cursos a medida y ofrecemos un servicio personalizado y flexible, siempre priorizando los intereses de nuestros alumnos.</p>
@@ -29,7 +30,13 @@ const OurServices = () => {
             <p className='subtitle'>Descubriendo el mundo de los vinos</p>
 
             <p>Proximamente ofreceremos cursos y talleres en inglés focalizados en viticultura y el rico idioma de su universo. Ubicadas en la región con el potencial vitivinícola más fuerte del país, nos entusiasma tener el privilegio de generar conexiones junto al mundo de los vinos desde la cuna de la enología local.</p>
-            <div className='border' />
+            {/* <div className='border' /> */}
+
+            <div className='end-text'>
+                <Link to='/contact'>
+                    Contáctanos
+                </Link>
+            </div>
         </div>
     )
 }
