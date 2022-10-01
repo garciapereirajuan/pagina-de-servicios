@@ -10,8 +10,9 @@ import { FaHome, FaFacebook } from 'react-icons/fa'
 import { MdMailOutline } from 'react-icons/md'
 import { AiFillInstagram } from 'react-icons/ai'
 import { IoLogoWhatsapp } from 'react-icons/io'
+import { motion } from 'framer-motion'
 
-import './App.css';
+import './AppDesktop.css';
 
 const bgClass = {
   '/': 'background-home',
