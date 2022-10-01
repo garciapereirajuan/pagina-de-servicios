@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import { Routes, Route, Link, useLocation, useNavigate } from 'react-router-dom'
 import infinityLogo from './assets/img/jpg/infinity-logo.png';
 import Home from './components/Home'
@@ -11,6 +11,7 @@ import { MdMailOutline } from 'react-icons/md'
 import { AiFillInstagram } from 'react-icons/ai'
 import { IoLogoWhatsapp } from 'react-icons/io'
 import { motion } from 'framer-motion'
+import { MenuContext } from 'react-flexible-sliding-menu'
 
 import './AppDesktop.css';
 
@@ -44,6 +45,7 @@ function App() {
   const [title, setTitle] = useState('Infinite Language Studio')
   const location = useLocation()
   const navigate = useNavigate()
+  const { toggleMenu } = useContext(MenuContext)
 
   useEffect(() => {
     if (location.pathname === '/') {
@@ -111,6 +113,11 @@ function App() {
           {title}
         </div>
       </header>
+      <div className={`menu-slider ${socialBar}`}>
+        <div onClick={toggleMenu}>
+          Menu
+        </div>
+      </div>
       <div className='menu'>
         <div
           id='/home'
@@ -162,7 +169,7 @@ function App() {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 

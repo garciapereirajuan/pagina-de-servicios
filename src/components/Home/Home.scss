@@ -45,3 +45,15 @@
     animation-duration: .8s;
     animation-iteration-count: 1;
 }
+
+@media (max-width: 900px) {
+    .home div {
+        width: 100%;
+        height: max-content;
+        font-size: 22px;
+    }
+
+    .home img {
+        width: 100%;
+    }
+}

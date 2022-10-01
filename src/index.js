@@ -5,12 +5,16 @@ import './index.css';
 import AppDesktop from './AppDesktop';
 import AppMobile from './AppMobile';
 import reportWebVitals from './reportWebVitals';
+import MenuProvider from 'react-flexible-sliding-menu'
+import Menu from './components/Menu'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <AppDesktop />
+      <MenuProvider MenuComponent={Menu}>
+        <AppDesktop />
+      </MenuProvider>
     </Router>
   </React.StrictMode>
 );

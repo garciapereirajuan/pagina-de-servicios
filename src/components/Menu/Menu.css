@@ -1,0 +1,88 @@
+/* .primary-button {
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 0;
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 4px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    box-shadow: var(--shadow-dilute);
+}
+
+.primary-button:active {
+    box-shadow: var(--shadow-conc);
+} */
+
+.Menu {
+    padding: 1rem;
+    position: relative;
+    background: #282828;
+    color: rgba(255, 255, 255, .8);
+    height: 100%;
+
+}
+
+.Menu button {
+    background: none;
+    border: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    fill: rgba(255, 255, 255, .8);
+    transition: all ease .2s;
+}
+
+.Menu button:hover {
+    fill: rgba(185, 137, 60, 1);
+}
+
+.Menu div {
+    color: rgba(255, 255, 255, .8);
+    fill: rgba(255, 255, 255, .5);
+    font-size: 20px;
+    margin: 0 -1rem;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: all ease .2s;
+    cursor: pointer;
+}
+
+.Menu div:hover {
+    color: rgba(185, 137, 60, 1);
+    fill: rgba(185, 137, 60, 1);
+}
+
+.Menu div.active {
+    /* background: linear-gradient(90deg, #dae0ee, rgba(32, 39, 55, 0.1)); */
+    color: var(--light-text-color);
+    fill: var(--light-text-color);
+}
+
+.Menu div:hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background: rgba(185, 137, 60, 1);
+    left: 0;
+    top: 0;
+}
+
+.Menu div svg {
+    margin-right: 1rem;
+}

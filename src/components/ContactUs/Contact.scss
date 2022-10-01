@@ -104,3 +104,39 @@ iframe body {
 .contact__end {
     margin-top: 10px;
 }
+
+@media (max-width: 900px) {
+    .contact__social-group {
+        flex-direction: column;
+    }
+
+    .contact__social-whatsapp {
+        width: 100%;
+        padding: 14px 0;
+    }
+
+    .contact__social-whatsapp div {
+        width: 180px;
+    }
+
+    .contact__maps {
+        flex-direction: column;
+    }
+
+    .contact__maps-tupungato,
+    .contact__maps-san-rafael {
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .contact__maps-tupungato {
+        margin-bottom: 10px;
+    }
+
+    .contact__end {
+        margin-top: 0px;
+        margin-bottom: 4px;
+    }
+}
