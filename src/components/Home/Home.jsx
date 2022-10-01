@@ -10,7 +10,7 @@ const Home = () => {
       <Link to='/contact'>
         <div>
           Clases de Idioma online
-          <img src={GirlOnline} width={500} />
+          <img src={GirlOnline} width={500} alt='¡Clases online!' />
         </div>
       </Link>
     </div>

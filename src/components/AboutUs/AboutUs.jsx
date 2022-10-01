@@ -1,13 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import infinityLogo from '../../assets/img/jpg/infinity-logo.png'
+import aboutUs from '../../assets/img/jpg/about-us.jpg'
 
 import './AboutUs.scss'
 
 const AboutUs = () => {
     return (
         <div className='about-us section-content'>
-            {/* <div className='border' /> */}
             <p className='subtitle'>Sobre nosotras</p>
 
             <p>Formadas en la Universidad Nacional de La Plata, donde nos conocimos al final de nuestras carreras universitarias, decidimos tomar rumbo a Mendoza, donde nos reencontramos y nació este proyecto.</p>
@@ -18,6 +17,9 @@ const AboutUs = () => {
             <div className='border' />
             <p>Como trabajadoras del lenguaje, creemos en el valor de la comunicación no sólo como herramienta de trabajo sino como filosofía de vida.</p>
 
+            <div className='about-us__img'>
+                <img src={aboutUs} width={500} alt='Nuestra foto' />
+            </div>
             <div className='end-text'>
                 <Link to='/contact'>
                     Contáctanos

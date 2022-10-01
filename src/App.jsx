@@ -5,8 +5,9 @@ import Home from './components/Home'
 import OurServices from './components/Services'
 import AboutUs from './components/AboutUs'
 import Contact from './components/ContactUs'
-import { FaHome, FaFacebook } from 'react-icons/fa'
 import { BsTranslate } from 'react-icons/bs'
+import { FaHome, FaFacebook } from 'react-icons/fa'
+import { MdMailOutline } from 'react-icons/md'
 import { AiFillInstagram } from 'react-icons/ai'
 import { IoLogoWhatsapp } from 'react-icons/io'
 
@@ -61,7 +62,6 @@ function App() {
     document.querySelectorAll('.content')[0].classList.add('animation-content')
 
     setTimeout(() => {
-      // setBackground(bg)
       document.querySelectorAll('.animation')[0].classList.remove('animation')
       document.querySelectorAll('.content')[0].classList.remove('animation-content')
     }, 355)
@@ -69,6 +69,8 @@ function App() {
     setTitle(titles[location.pathname])
     setSelect(btnClass[location.pathname])
     setSelect('')
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location])
 
   window.onscroll = function () {
@@ -85,7 +87,6 @@ function App() {
   return (
     <div className="App">
       <div className={`background ${background}`} />
-      {/* <div className='opacity' /> */}
       <header className='header-home'>
         {/* <div className={`social ${socialBar}`}>
           <a href='mailto:no-reply@example.com'>
