@@ -30,8 +30,10 @@ const AboutUs = () => {
 
                 <p>We both studied at the National University of La Plata, where we first met. Later on, we decided to head to Mendoza where we met again and this project was born.</p>
 
+                <div className='border' />
                 <p>Originally from Guaminí, Noelia works online and in-person as an English techer in Tupungato, the city where she currently resides. Lorena is based in San Rafael and works mostly translating, proofreading and copyediting, as well as subtitling audiovisual material. Likewise, we both specialize in teaching ESL In-company and in international exams preparation.</p>
 
+                <div className='border' />
                 <p>As language workers, we believe in the value of communication not only as a tool for knowledge but as a philosophy of life.</p>
 
                 <div className='about-us__img'>

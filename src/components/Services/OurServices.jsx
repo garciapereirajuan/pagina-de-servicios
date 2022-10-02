@@ -5,6 +5,7 @@ import './OurServices.scss'
 
 const OurServices = () => {
     const [display, setDisplay] = useState(['flex', 'none'])
+    const [lang, setLang] = useState(localStorage.getItem('lang'))
     const location = useLocation()
 
     useEffect(() => {
@@ -12,13 +13,13 @@ const OurServices = () => {
 
         if (langFromPath === 'es') {
             setDisplay(['flex', 'none'])
-
         }
 
         if (langFromPath === 'en') {
             setDisplay(['none', 'flex'])
-
         }
+
+        setLang(langFromPath)
     }, [location])
 
     return (
@@ -52,7 +53,7 @@ const OurServices = () => {
                 <p>Soon we will offer viticulture courses and workshops in English focused on our wine region and the rich language of the world of wines. Located in the country’s region with the strongest viticultural production potential, we feel honored to have the privilege of making connections around the world of wines from the cradle of our local terroirs.</p>
 
                 <div className='end-text'>
-                    <Link to='/contact'>
+                    <Link to={`/${lang}/contact`}>
                         Contact us
                     </Link>
                 </div>
@@ -85,7 +86,7 @@ const OurServices = () => {
                 {/* <div className='border' /> */}
 
                 <div className='end-text'>
-                    <Link to='/contact'>
+                    <Link to={`/${lang}/contact`}>
                         Contáctanos
                     </Link>
                 </div>
