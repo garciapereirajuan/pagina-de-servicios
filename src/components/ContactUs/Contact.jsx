@@ -22,7 +22,7 @@ const Contact = () => {
                             <span>Lorena FS</span>
                             <div className='border-social' />
                             <div>
-                                <a target='_blank' rel='noreferrer' href='https://wa.me/1132932488'>
+                                <a target='_blank' rel='noreferrer' href='https://wa.me/+541132932488'>
                                     <AiOutlineWhatsApp size={28} />
                                 </a>
                                 <span>011-3293 2488</span>
@@ -38,7 +38,7 @@ const Contact = () => {
                             <span>Noelia GP</span>
                             <div className='border-social' />
                             <div>
-                                <a target='_blank' rel='noreferrer' href='https://wa.me/1159474947'>
+                                <a target='_blank' rel='noreferrer' href='https://wa.me/+541159474947'>
                                     <AiOutlineWhatsApp size={28} />
                                 </a>
                                 <span>011-5947 4947</span>
@@ -63,6 +63,11 @@ const Contact = () => {
                         <p>Provincia de Mendoza</p>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253835.7554337564!2d-69.30489703930161!3d-34.93946176778414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967dcd07cab22bc7%3A0x2cb3614db155dff9!2sTupungato%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1664635673273!5m2!1ses-419!2sar" style={{ border: 0 }} allowFullScreen="" loading="lazy"
                             title='Mapa de Tupungato' referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div className='contact__maps-mendoza'>
+                        <p>Provincia de Mendoza</p>
+                        <p>Argentina</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6679145.0404286515!2d-71.97614104958949!3d-35.17404248423927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679745b5dd5fffd%3A0x902586f1d047824!2sMendoza!5e0!3m2!1ses-419!2sar!4v1664655077272!5m2!1ses-419!2sar" style={{ border: 0 }} allowFullScreen="" loading="lazy" title='Mapa de San Rafael' referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div className='border-social' />

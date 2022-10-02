@@ -77,7 +77,8 @@
 }
 
 .contact__maps-tupungato,
-.contact__maps-san-rafael {
+.contact__maps-san-rafael,
+.contact__maps-mendoza {
     width: 100%;
     background-color: #373737;
     background-color: rgba(185, 137, 60, 0.8);
@@ -125,18 +126,36 @@ iframe body {
 
     .contact__maps-tupungato,
     .contact__maps-san-rafael {
-        padding: 0;
-        margin: 0;
-        margin-top: 10px;
-        width: 100%;
+        display: none;
     }
 
-    .contact__maps-tupungato {
-        margin-bottom: 10px;
+    .contact__maps-mendoza {
+        padding: 6px;
+        margin: 0;
+        margin-top: 10px;
+        width: 98%;
     }
+
+    // .contact__maps-tupungato,
+    // .contact__maps-san-rafael {
+    //     padding: 0;
+    //     margin: 0;
+    //     margin-top: 10px;
+    //     width: 100%;
+    // }
+
+    // .contact__maps-tupungato {
+    //     margin-bottom: 10px;
+    // }
 
     .contact__end {
         margin-top: 0px;
         margin-bottom: 4px;
+    }
+}
+
+@media (min-width: 901px) {
+    .contact__maps-mendoza {
+        display: none;
     }
 }

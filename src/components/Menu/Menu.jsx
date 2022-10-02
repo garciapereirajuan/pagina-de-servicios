@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useState, useContext, useEffect } from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { MenuContext } from 'react-flexible-sliding-menu'
 import Home from '../Home'
 import OurServices from '../Services'
@@ -23,41 +23,60 @@ const DashboardSVG = () => (
 );
 
 const Menu = () => {
+    const [lang, setLang] = useState(localStorage.getItem('lang'))
     const { closeMenu } = useContext(MenuContext);
     const navigate = useNavigate()
+    const location = useLocation()
+
+    useEffect(() => {
+        localStorage.setItem('lang', lang)
+    }, [lang])
 
     return (
         <div className="Menu">
             <h1>Menu</h1>
             <div
-                id='/home'
-                onClick={() => { navigate('/home'); closeMenu() }}
+                id={`/${lang}/home`}
+                onClick={() => { navigate(`/${lang}/home`); closeMenu() }}
             >
-                <FaHome /> Inicio
+                <FaHome /> {lang === 'es' ? 'Inicio' : 'Home'}
             </div>
             <div
-                id='/our-services'
-                onClick={() => { navigate('/our-services'); closeMenu() }}
+                id={`/${lang}/our-services`}
+                onClick={() => { navigate(`/${lang}/our-services`); closeMenu() }}
             >
-                <DashboardSVG /> Nuestro servicios
+                <DashboardSVG /> {lang === 'es' ? 'Nuestro servicios' : 'Our services'}
             </div>
             <div
-                id='/about-us'
-                onClick={() => { navigate('/about-us'); closeMenu() }}
+                id={`/${lang}/about-us`}
+                onClick={() => { navigate(`/${lang}/about-us`); closeMenu() }}
             >
-                <DashboardSVG /> Quiénes somos
+                <DashboardSVG /> {lang === 'es' ? 'Quiénes somos' : 'About us'}
             </div>
             <div
-                id='/contact'
-                onClick={() => { navigate('/contact'); closeMenu() }}
+                id={`/${lang}/contact`}
+                onClick={() => { navigate(`/${lang}/contact`); closeMenu() }}
             >
-                <DashboardSVG /> Contacto
+                <DashboardSVG /> {lang === 'es' ? 'Contacto' : 'Contact us'}
             </div>
             <div
-            // id='/'
-            // onClick={() => navigate('/')}
+                // id='/'
+                onClick={() => {
+                    const path = location.pathname.split('/')[2]
+
+                    if (lang === 'es') {
+                        setLang('en')
+                        localStorage.setItem('lang', 'en')
+                        navigate(`/en/${path}`)
+                    } else {
+                        setLang('es')
+                        localStorage.setItem('lang', 'es')
+                        navigate(`/es/${path}`)
+                    }
+                }
+                }
             >
-                <BsTranslate /> Inglés
+                <BsTranslate /> {lang === 'es' ? 'English' : 'Español'}
             </div>
             <button onClick={closeMenu} className='primary-button'>
                 <svg

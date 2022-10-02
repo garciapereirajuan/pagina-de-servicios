@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
-import AppDesktop from './AppDesktop';
-import AppMobile from './AppMobile';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 import MenuProvider from 'react-flexible-sliding-menu'
 import Menu from './components/Menu'
@@ -13,7 +12,7 @@ root.render(
   <React.StrictMode>
     <Router>
       <MenuProvider MenuComponent={Menu}>
-        <AppDesktop />
+        <App />
       </MenuProvider>
     </Router>
   </React.StrictMode>

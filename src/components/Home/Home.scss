@@ -46,6 +46,8 @@
     animation-iteration-count: 1;
 }
 
+@media (max-width: 1180px) {}
+
 @media (max-width: 900px) {
     .home div {
         width: 100%;
@@ -53,7 +55,12 @@
         font-size: 22px;
     }
 
+
+}
+
+@media (max-width: 560px) {
     .home img {
+        animation: none;
         width: 100%;
     }
 }
