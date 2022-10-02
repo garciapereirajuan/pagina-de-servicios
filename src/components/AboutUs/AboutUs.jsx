@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import aboutUs from '../../assets/img/jpg/about-us.jpg'
+import { Helmet } from 'react-helmet'
 
 import './AboutUs.scss'
 
@@ -25,6 +26,14 @@ const AboutUs = () => {
 
     return (
         <>
+            <Helmet>
+                <title>{lang === 'es' ? 'Quiénes somos' : 'About us'} | Infinite Language Studio</title>
+                <meta
+                    name='description'
+                    content='About us | Online Language Classes | Infinite Language Studio'
+                    data-react-helmet='true'
+                />
+            </Helmet>
             <div className='about-us section-content' style={{ display: display[1] }}>
                 <p className='subtitle'>About us</p>
 

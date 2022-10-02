@@ -45,7 +45,7 @@ const Menu = () => {
                 id={`/${lang}/our-services`}
                 onClick={() => { navigate(`/${lang}/our-services`); closeMenu() }}
             >
-                <DashboardSVG /> {lang === 'es' ? 'Nuestro servicios' : 'Our services'}
+                <DashboardSVG /> {lang === 'es' ? 'Nuestros servicios' : 'Our services'}
             </div>
             <div
                 id={`/${lang}/about-us`}
@@ -68,10 +68,12 @@ const Menu = () => {
                         setLang('en')
                         localStorage.setItem('lang', 'en')
                         navigate(`/en/${path}`)
+                        closeMenu()
                     } else {
                         setLang('es')
                         localStorage.setItem('lang', 'es')
                         navigate(`/es/${path}`)
+                        closeMenu()
                     }
                 }
                 }

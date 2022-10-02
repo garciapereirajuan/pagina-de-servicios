@@ -156,7 +156,7 @@ function App() {
       </header>
       <div className={`menu-slider ${socialBar}`}>
         <div onClick={toggleMenu}>
-          <FiMenu /> Menu
+          <FiMenu />
         </div>
       </div>
       <div className='menu'>

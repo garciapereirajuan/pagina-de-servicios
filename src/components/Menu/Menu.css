@@ -1,32 +1,10 @@
-/* .primary-button {
-    background: var(--primary-color);
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    border: 0;
-    padding: 1rem;
-    margin-right: 1rem;
-    border-radius: 4px;
-    transition: var(--transition);
-    cursor: pointer;
-}
-
-.primary-button:hover {
-    box-shadow: var(--shadow-dilute);
-}
-
-.primary-button:active {
-    box-shadow: var(--shadow-conc);
-} */
-
 .Menu {
     padding: 1rem;
     position: relative;
     background: #282828;
     color: rgba(255, 255, 255, .8);
     height: 100%;
-    font-family: Quicksand;
-
+    font-family: Quicksand, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 .Menu button {
@@ -65,12 +43,6 @@
 .Menu div:hover {
     color: rgba(185, 137, 60, 1);
     fill: rgba(185, 137, 60, 1);
-}
-
-.Menu div.active {
-    /* background: linear-gradient(90deg, #dae0ee, rgba(32, 39, 55, 0.1)); */
-    color: var(--light-text-color);
-    fill: var(--light-text-color);
 }
 
 .Menu div:hover::before {

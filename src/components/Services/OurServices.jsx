@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 
 import './OurServices.scss'
 
@@ -24,6 +25,14 @@ const OurServices = () => {
 
     return (
         <>
+            <Helmet>
+                <title>{lang === 'es' ? 'Nuestros servicios' : 'Our services'} | Infinite Language Studio</title>
+                <meta
+                    name='description'
+                    content='Our services | Online Language Classes | Infinite Language Studio'
+                    data-react-helmet='true'
+                />
+            </Helmet>
             <div className='section-content services' style={{ display: display[1] }}>
 
                 <p className='subtitle'>Online language classes</p>
