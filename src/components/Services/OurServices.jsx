@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
-import './OurServices.scss'
-
 const OurServices = () => {
     const [display, setDisplay] = useState(['flex', 'none'])
     const [lang, setLang] = useState(localStorage.getItem('lang'))

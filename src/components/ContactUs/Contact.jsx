@@ -4,7 +4,7 @@ import { MdMailOutline } from 'react-icons/md'
 import { AiOutlineWhatsApp, AiFillInstagram } from 'react-icons/ai'
 import { Helmet } from 'react-helmet'
 
-import './Contact.scss'
+import './Contact.css'
 
 const Contact = () => {
     const [lang, setLang] = useState(localStorage.getItem('lang'))
@@ -44,8 +44,8 @@ const Contact = () => {
                                 <div>
                                     <a target='_blank' rel='noreferrer' href='https://wa.me/+541132932488'>
                                         <AiOutlineWhatsApp size={28} />
+                                        <span>011-3293 2488</span>
                                     </a>
-                                    <span>011-3293 2488</span>
                                 </div>
                                 <div>
                                     <a target='_blank' rel='noreferrer' href='https://www.instagram.com/noe_garcia_pereira/'>
@@ -60,8 +60,8 @@ const Contact = () => {
                                 <div>
                                     <a target='_blank' rel='noreferrer' href='https://wa.me/+541159474947'>
                                         <AiOutlineWhatsApp size={28} />
+                                        <span>011-5947 4947</span>
                                     </a>
-                                    <span>011-5947 4947</span>
                                 </div>
                                 <div>
                                     <a target='_blank' rel='noreferrer' href='https://www.instagram.com/noe_garcia_pereira/'>

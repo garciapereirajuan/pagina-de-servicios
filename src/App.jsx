@@ -7,8 +7,9 @@ import OurServices from './components/Services'
 import AboutUs from './components/AboutUs'
 import Contact from './components/ContactUs'
 import { BsTranslate } from 'react-icons/bs'
-import { FaHome, FaFacebook } from 'react-icons/fa'
+import { FaHome, FaFacebook, FaCopyright } from 'react-icons/fa'
 import { FiMenu } from 'react-icons/fi'
+import { BsLightbulbFill } from 'react-icons/bs'
 import { MdMailOutline } from 'react-icons/md'
 import { AiFillInstagram } from 'react-icons/ai'
 import { IoLogoWhatsapp } from 'react-icons/io'
@@ -233,6 +234,16 @@ function App() {
                 </div>
               )
           }
+        </div>
+        <div className='footer'>
+          <FaCopyright /> 2022 -
+          <a
+            href='https://juangarciapereira.web.app/projects'
+            target='_blank'
+            rel='noreferrer'
+          >
+            JUAN G.P.
+          </a>
         </div>
       </div>
     </div >

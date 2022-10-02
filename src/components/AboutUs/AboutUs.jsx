@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import aboutUs from '../../assets/img/jpg/about-us.jpg'
 import { Helmet } from 'react-helmet'
 
-import './AboutUs.scss'
+import './AboutUs.css'
 
 const AboutUs = () => {
     const [lang, setLang] = useState(localStorage.getItem('lang'))

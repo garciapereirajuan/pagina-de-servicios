@@ -1,10 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { MenuContext } from 'react-flexible-sliding-menu'
-import Home from '../Home'
-import OurServices from '../Services'
-import AboutUs from '../AboutUs'
-import Contact from '../ContactUs'
 import { BsTranslate } from 'react-icons/bs'
 import { FaHome } from 'react-icons/fa'
 

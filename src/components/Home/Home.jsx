@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import GirlOnline from '../../assets/img/jpg/kindle.jpg';
 import { Helmet } from 'react-helmet'
 
-import './Home.scss'
+import './Home.css'
 
 const Home = () => {
   const [lang, setLang] = useState(localStorage.getItem('lang'))

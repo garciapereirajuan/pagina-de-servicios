@@ -117,7 +117,7 @@ iframe body {
     }
 
     .contact__social-whatsapp div {
-        width: 180px;
+        width: 155px;
     }
 
     .contact__maps {
@@ -136,17 +136,17 @@ iframe body {
         width: 98%;
     }
 
-    // .contact__maps-tupungato,
-    // .contact__maps-san-rafael {
-    //     padding: 0;
-    //     margin: 0;
-    //     margin-top: 10px;
-    //     width: 100%;
-    // }
+    /* .contact__maps-tupungato,
+    .contact__maps-san-rafael {
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
 
-    // .contact__maps-tupungato {
-    //     margin-bottom: 10px;
-    // }
+    .contact__maps-tupungato {
+        margin-bottom: 10px;
+    } */
 
     .contact__end {
         margin-top: 0px;
