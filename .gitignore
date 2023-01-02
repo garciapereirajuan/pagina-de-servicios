@@ -10,6 +10,11 @@
 
 # production
 /build
+/.firebase
+.firebaserc
+.firebase.json
+
+
 
 # misc
 .DS_Store
@@ -22,6 +27,3 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-/.firebase
-.firebaserc
-firebase.json
